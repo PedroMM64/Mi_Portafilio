@@ -5,68 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Pedro Manoatl</title>
 
     <link rel="stylesheet" href="style.css">
-
-    <title>Portafolio</title>
+    <link rel="shortcut icon" href="Imagenes/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-    <header class="navegacion">
-        <div class="logotipo">
-            <img src="Imagenes/logoestrella.svg" alt="Logotipo">
-            <p class="logotext">Pedro Manoatl</p>
-        </div>
-        <nav>
-            <a href="#seccion1" class="pestanas">Sobre mi</a>
-            <a href="#seccion2" class="pestanas">Skills</a>
-            <a href="#seccion3" class="pestanas">Hobbies</a>
-            <a href="#seccion4" class="pestanas">Formación</a>
-            <a href="#seccion5" class="pestanas">Proyectos</a>
-            <a href="#seccion6" class="nav-correo">snupis3@live.com.mx</a>
-        </nav>
-    </header>
-    <main>
-        <section class="principal">
-            <div>
-                <div>
-                    <h1 class="titulo">Hola mi nombre es Pedro Manoatl y construyo páginas web</h1>
-                </div>
-                <div>
-                    <h2 class="subtitulo1">Soy formado en diseño web y desarrollo front-end, con una sólida base en sistemas
-                        computacionales.</h2>
-                </div>
-                <div class="enlaces">
-                    <div class="redes-enlaces">
-                        <a href="https://github.com/PedroMM64" target="_blank">Github<img src="Imagenes/github.png"
-                                alt="Mi github"></a>
-                    </div>
-                    <div class="redes-enlaces">
-                        <a href="https://www.linkedin.com/in/pedro-manoatl/" target="_blank">LinkedIn<img
-                                src="Imagenes/linkedin.png" alt="Mi linkedin"></a>
-                    </div>
-                    <div class="redes-enlaces">
-                        <a href="docs/" target="_blank">Currículo<img src="Imagenes/cv.png" alt="Mi curriculum"></a>
-                    </div>
-                </div>
-            </div>
-            <img src="Imagenes/perfil.png" alt="Imagen de perfil" class="perfil-img">
-        </section>
-        <section class="secundario" id="seccion1">
-            <div class="descripcion-mi">
-                <h1 class="titulo-mi">Sobre mi</h1>
-                <p class="texto-mi">¡Hola! Soy Pedro José Manoatl Milacatl, soy ingeniero en sistemas computacionales, 
-                    apasionado del desarrollo web y diseño de experiencias digitales. Mis estudios en la carrera me han 
-                    proporcionado una sólida base técnica que combino con mi creatividad para construir sitios web 
-                    funcionales y atractivos, he adquirido habilidades en programación, bases de datos y arquitectura de sistemas. 
-                    A lo largo de mi formación me sumergí en el mundo del desarrollo web y me emociona aprender y seguir creciendo
-                    en esta área. <br><br>
+    <header class="header">
+        <a href="#" class="logo"><i class='bx bx-meteor'></i>Pedro Manoatl</a>
 
-                    Trabajo con una variedad de herramientas y tecnologías, incluyendo HTML, CSS, JavaScript y frameworks 
+        <nav class="navbar">
+            <a href="#seccion1" class="active">Inicio</a>
+            <a href="#seccion2">Sobre mí</a>
+            <a href="#seccion3">Proyectos</a>
+            <a href="#seccion4">Estudios</a>
+            <a href="#seccion5">Habilidades</a>
+            <a href="#seccion6" class="nav-correo">Contacto</a>
+        </nav>
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+        <div class='bx bx-menu' id="menu-icon"></div>
+    </header>
+
+    <section class="home" id="seccion1">
+        <div class="home-content">
+            <h3>Hola yo soy</h3>
+            <h1>Pedro Manoatl</h1>
+            <p>Formado en desarrollo front-end, con una sólida base en sistemas computacionales.</p>
+
+            <div class="social-media">
+                <a href="https://github.com/PedroMM64" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/pedro-manoatl/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+
+            <a href="#" target="_blank" class="btn">Descargar CV<i class='bx bxs-book-content'></i></a>
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Desarrollador Web</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-music'></i>
+                    <h3>Músico</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-server'></i>
+                    <h3>Ingeniero en sistemas<br>computacionales</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class='bx bx-microchip'></i>
+                    <h3>Electrónico</h3>
+                </div>
+
+                <div class="circulo"></div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="home-img">
+            <img src="Imagenes/perfil.png" alt="Mi persona">
+        </div>
+    </section>
+
+
+
+    <section class="about" id="seccion2">
+        <div class="about-img">
+            <img src="Imagenes/perfil.png" alt="Perfil sobre mí">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">Sobre <span>Mí</span></h2>
+            <h3>¡Espero tener la oportunidad de colaborar contigo y llevar tus ideas al mundo digital!</h3>
+            <p>Soy ingeniero en sistemas computacionales, apasionado del desarrollo web y diseño de experiencias
+                digitales. Mis estudios en la carrera me han proporcionado una sólida base técnica que combino con mi
+                creatividad
+                para construir sitios web funcionales y atractivos, he adquirido habilidades en programación, bases de
+                datos
+                y arquitectura de sistemas.
+            </p>
+            <div id="ver-mas" style="display: none;">
+                <p class="texto-mi">
+                    A lo largo de mi formación me sumergí en el mundo del desarrollo web y me
+                    emociona aprender y seguir creciendo en esta área.
+                    Trabajo con una variedad de herramientas y tecnologías, incluyendo HTML, CSS, JavaScript y
+                    frameworks
                     como React. Mi enfoque se centra en crear interfaces intuitivas y optimizadas que brinden una
                     excelente experiencia al usuario.<br>
                     Por mi experiencia, creo que el diseño y la tecnología pueden unirse para crear soluciones
@@ -77,260 +103,238 @@
                     Estoy emocionado de seguir expandiendo mis horizontes y crear conexiones significativas
                     a través de mi trabajo. <br><br>
 
-                    ¡Espero tener la oportunidad de colaborar contigo y llevar tus ideas al mundo digital!
-                    <br><br>¡Saludos! Pedro.
+                    ¡Saludos! Pedro.
                 </p>
             </div>
-        </section>
-        <section class="tercero" id="seccion2">
-            <h1>Skills</h1>
-            <div class="skill-mi">
-                <div class="skill-box">
-                    <img src="Imagenes/html5.png" alt="HTML5" class="skill-img">
-                    <P class="skill-texto">HTML 5</P>
-                </div>
-                <div class="skill-box">
-                    <img src="Imagenes/css3.png" alt="CSS3" class="skill-img">
-                    <P class="skill-texto">CSS 3</P>
-                </div>
-                <div class="skill-box">
-                    <img src="Imagenes/javascript.png" alt="JavaScript" class="skill-img">
-                    <P class="skill-texto">JavaScript</P>
-                </div>
-                <div class="skill-box">
-                    <img src="Imagenes/react.png" alt="React" class="skill-img">
-                    <P class="skill-texto">React</P>
-                </div>
-                <div class="skill-box">
-                    <img src="Imagenes/nodejs.png" alt="NodeJS" class="skill-img">
-                    <P class="skill-texto">NodeJS</P>
-                </div>
-                <div class="skill-box">
-                    <img src="Imagenes/php.png" alt="PHP" class="skill-img">
-                    <P class="skill-texto">PHP</P>
-                </div>
-                <div class="skill-box">
-                    <img src="Imagenes/c++.png" alt="C++" class="skill-img">
-                    <P class="skill-texto">C++</P>
-                </div>
-                <div class="skill-box">
-                    <img src="Imagenes/redes.png" alt="Redes" class="skill-img">
-                    <P class="skill-texto implementacion">Implementación de Redes</P>
-                </div>
-            </div>
-        </section>
-        <section class="cuarto" id="seccion3">
-            <h1>Hobbies</h1>
-            <div class="hobbie-mi">
-                <div class="hobbie-box">
-                    <img src="Imagenes/correr.png" alt="Correr" class="hobbie-img">
-                    <P class="hobbie-texto">Correr</P>
-                </div>
-                <div class="hobbie-box">
-                    <img src="Imagenes/futbol.png" alt="Futbol" class="hobbie-img">
-                    <P class="hobbie-texto">Jugar futbol</P>
-                </div>
-                <div class="hobbie-box">
-                    <img src="Imagenes/bailar.png" alt="Bailar" class="hobbie-img">
-                    <P class="hobbie-texto">Bailar</P>
-                </div>
-                <div class="hobbie-box">
-                    <img src="Imagenes/bateria.png" alt="Tocar bateria" class="hobbie-img">
-                    <P class="hobbie-texto">Tocar la bateria</P>
-                </div>
-                <div class="hobbie-box">
-                    <img src="Imagenes/cine.png" alt="Peliculas" class="hobbie-img">
-                    <P class="hobbie-texto">Ver películas</P>
-                </div>
-                <div class="hobbie-box">
-                    <img src="Imagenes/audifono.png" alt="Escuchar musica" class="hobbie-img">
-                    <P class="hobbie-texto">Escuchar música</P>
-                </div>
-                <div class="hobbie-box">
-                    <img src="Imagenes/camara.png" alt="Tomar fotografías" class="hobbie-img">
-                    <P class="hobbie-texto">Tomar fotografías</P>
-                </div>
-                <div class="hobbie-box">
-                    <img src="Imagenes/mando.png" alt="Mando" class="hobbie-img">
-                    <P class="hobbie-texto">Jugar videojuegos</P>
-                </div>
-            </div>
-        </section>
-        <section class="quinto" id="seccion4">
-            <h1>Formación Académica</h1>
-            <div class="estudios">
-                <div class="estudios-box">
-                    <div class="mis-estudios">
-                        <img src="Imagenes/gtue.png" alt="Grupo Tecnologico Universitario Ecatepec"
-                            class="mis-estudios-img">
-                        <p class="mis-estudios-text">
-                            Ingeniería en Sistemas Computacionales
-                        </p>
-                        <p class="mis-estudios-anio">
-                            2020 - 2023 GTUE
-                        </p>
-                    </div>
-                    <div class="mis-estudios">
-                        <img src="Imagenes/onealura.png" alt="Oracle Next Education" class="mis-estudios-img">
-                        <p class="mis-estudios-text">
-                            Formación en Front-End
-                        </p>
-                        <p class="mis-estudios-anio">
-                            2023 - ALURA Latam
-                        </p>
-                    </div>
-                    <div class="mis-estudios">
-                        <img src="Imagenes/codesi.png" alt="Oracle Next Education" class="mis-estudios-img">
-                        <p class="mis-estudios-text">
-                            Programación Orientado a Objetos en C++
-                        </p>
-                        <p class="mis-estudios-anio">
-                            2020 - Grupo CODESI
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="sexto" id="seccion5">
-            <h1>Mis proyectos</h1>
-            <div class="slider-container container">
-                <img src="Imagenes/flecha izquierda.svg" alt="Flecha izquierda" class="slider-flecha" id="antes">
+            <button id="toggle-button" onclick="toggleText()" class="btn" style="cursor: pointer;">Ver más</button>
+        </div>
+    </section>
 
-                <section class="slider-contenido slider-contenido--show" data-id="1">
-                    <figure class="slider-imagen">
-                        <img src="Imagenes/Challenge1.png" alt="Challenge 1 ALURA" class="slider-img">
-                    </figure>
-                    <div class="slider-txt">
-                        <h2 class="subtitulo2">
-                            Encriptador de texto
-                        </h2>
-                        <h3 class="slider-intro">
-                            Proyecto realizado por parte de ALURA Latam para el Challenge 1 del curso.
-                        </h3>
-                        <p class="slider-texto">
-                            Challenge Oracle
-                        </p>
-                        <div class="botones">
-                            <a href="https://github.com/PedroMM64/Challenge" target="_blank" class="repo">
-                                Repositorio
-                            </a>
-                            <a href="https://pedromm64.github.io/Challenge/" target="_blank" class="demo">
-                                Ver página
-                            </a>
-                        </div>
-                    </div>
-                </section>
 
-                <section class="slider-contenido" data-id="2">
-                    <figure class="slider-imagen">
-                        <img src="Imagenes/restaurante.png" alt="Challenge 1 ALURA" class="slider-img">
-                    </figure>
-                    <div class="slider-txt">
-                        <h2 class="subtitulo2">
-                            Página web "The Flavor Corner"
-                        </h2>
-                        <h3 class="slider-intro">
-                            ¡Welcome to the Flavor Corner! Cada elemento de esta página web ha sido cuidadosamente
-                            diseñado y desarrollado por un equipo de estudiantes apasionados de diversas disciplinas.
-                            Los precios precisos fueron establecidos por estudiantes de contabilidad, la identidad y
-                            valores del restaurante fueron definidos por alumnos de administración de empresas, y el
-                            atractivo visual se logró gracias a los estudiantes de marketing digital.
-                        </h3>
-                        <p class="slider-texto">
-                            Proyecto escolar de ingles en conjunto con ideas de alumnos de otras carreras
-                        </p>
-                        <div class="botones">
-                            <a href="" class="repo">
-                                Repositorio
-                            </a>
-                            <a href="" class="demo">
-                                Ver página
-                            </a>
-                        </div>
+    <section class="proyects" id="seccion3">
+        <h2 class="heading">Mis <span>Proyectos</span></h2>
+        <div class="proyects-container">
+            <div class="proyects-box">
+                <img src="Imagenes/Challenge1.png" alt="Challenge encriptador">
+                <div class="proyects-layer">
+                    <h4>Encriptador Alura</h4>
+                    <p>Proyecto realizado por parte de ALURA Latam para el Challenge 1 del curso.</p>
+                    <div class="buttons">
+                        <a href="https://pedromm64.github.io/Challenge/" target="_blank"><i class='bx bx-link-external'></i></a>
+                        <a href="https://github.com/PedroMM64/Challenge" target="_blank"><i class='bx bxl-github'></i></a>
                     </div>
-                </section>
-
-                <section class="slider-contenido" data-id="3">
-                    <figure class="slider-imagen">
-                        <img src="Imagenes/clinica.png" alt="Challenge 1 ALURA" class="slider-img">
-                    </figure>
-                    <div class="slider-txt">
-                        <h2 class="subtitulo2">
-                            Página web "Clínica Materno-Infantil"
-                        </h2>
-                        <h3 class="slider-intro">
-                            ¡Mejores servicios hospitalarios! Este proyecto surge de la colaboración interdisciplinaria
-                            entre estudiantes de sistemas computacionales y arquitectura. <br> En esta página web, hemos
-                            fusionado habilidades de diseño, desarrollo, planificación y tecnología para crear una
-                            visión integral de una clínica de salud dedicada a las necesidades de madres e hijos.
-                        </h3>
-                        <p class="slider-texto">
-                            Proyecto final de la carrera
-                        </p>
-                        <div class="botones">
-                            <a href="https://github.com/PedroMM64/Proyecto_Hospital" target="_blank" class="repo">
-                                Repositorio
-                            </a>
-                            <a href="https://pedromm64.github.io/Proyecto_Hospital/" target="_blank" class="demo">
-                                Ver página
-                            </a>
-                        </div>
-                    </div>
-                </section>
-                <img src="Imagenes/flecha derecha.svg" alt="Flecha derecha" class="slider-flecha" id="despues">
+                </div>
             </div>
-        </section>
-        <section class="septimo" id="seccion6">
-            <div class="contacto">
-                <img src="Imagenes/contacto.jpg" alt="Imagen de contacto" class="contacto-img">
-                <div class="contacto-texto">
-                    <h1>Contacto</h1>
-                    <p><br>¿Quieres contactarme?</p>
-                    <p>Complete el formulario y me pondré en contacto con usted lo antes posible.</p>
-                    <form method="post" class="contacto-form" id="form">
-                        <div class="contacto-input">
-                            <span class="details">Nombre*:</span>
-                            <input type="text" required>
+            <div class="proyects-box">
+                <img src="Imagenes/restaurante.png" alt="Restaurante The Flavor Corner">
+                <div class="proyects-layer">
+                    <h4>Restaurante "The Flavor Corner"</h4>
+                    <p>¡Welcome to the Flavor Corner! Proyecto escolar de inglés en conjunto con alumnos de otras
+                        carreras.</p>
+                    <div class="buttons">
+                        <a href=""><i class='bx bx-link-external'></i></a>
+                        <a href=""><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="proyects-box">
+                <img src="Imagenes/clinica.png" alt="Clínica Materno-Infantil">
+                <div class="proyects-layer">
+                    <h4>Clínica Materno-Infantil</h4>
+                    <p>¡Mejores servicios hospitalarios! Proyecto final de la carrera en conjunto con arquitectura.</p>
+                    <div class="buttons">
+                        <a href="https://pedromm64.github.io/Proyecto_Hospital/" target="_blank"><i class='bx bx-link-external'></i></a>
+                        <a href="https://github.com/PedroMM64/Proyecto_Hospital" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="proyects-box">
+                <img src="" alt="Mini-Alura">
+                <div class="proyects-layer">
+                    <h4>Mini-Alura</h4>
+                    <p>Actividad de clase para conocer sobre Flexbox</p>
+                    <div class="buttons">
+                        <a href="https://github.com/PedroMM64/Mini-Alura" target="_blank"><i class='bx bx-link-external'></i></a>
+                        <a href="https://pedromm64.github.io/Mini-Alura/" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="educacion" id="seccion4">
+        <h2 class="heading">Mis <span>Estudios</span><i class='bx bx-book-open'></i></h2></i>
+        <span class="ver-cert">(Seleccione para ver certificado)</span>
+        <div class="educacion-fila">
+            <div class="educacion-columna">
+                <div class="educacion-box">
+                    <a href="#" class="educacion-content">
+                        <div class="content">
+                            <img src="Imagenes/gtue.png" alt="GTUE">
+                            <div class="year"><i class='bx bxs-calendar'></i>2020 - 2023 GTUE</div>
+                            <h3>Ingeniería en Sistemas Computacionales</h3>
                         </div>
-                        <div class="contacto-input">
-                            <span class="details">Correo Electrónico*:</span>
-                            <input type="email" required>
+                    </a>
+
+                    <a href="docs/Pedro José Manoatl Milacatl - Programa.pdf" target="_blank" class="educacion-content">
+                        <div class="content">
+                            <img src="Imagenes/onealura.png" alt="Alura Latam y Oracle One">
+                            <div class="year"><i class='bx bxs-calendar'></i>2023 ALURA Latam</div>
+                            <h3>Formación en Front-End</h3>
                         </div>
-                        <div class="contacto-input">
-                            <span class="details">Asunto*:</span>
-                            <input type="text" required>
+                    </a>
+
+                    <a href="#" class="educacion-content">
+                        <div class="content">
+                            <img src="Imagenes/codesi.png" alt="Alura Latam y Oracle One">
+                            <div class="year"><i class='bx bxs-calendar'></i>2020 Grupo CODESI</div>
+                            <h3>Programación Orientado a Objetos en C++</h3>
                         </div>
-                        <div class="input-box">
-                            <span class="details">Descripción de su mensaje*:</span>
-                            <textarea placeholder="¿Listo para tener tu propia página web?. ¡Cuéntame más sobre tu proyecto!" required></textarea>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="seccion5">
+        <h2 class="heading">Mis <span>habilidades</span></h2>
+        <div class="skills-filas">
+            <div class="skills-columnas">
+                <h3 class="tittle"> Habilidades técnicas <span class="ver-cert">(Seleccione uno para ver
+                        certificado)</span></h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <a href="">
+                                <h3>Implementación de redes</h3>
+                                <i class='bx bx-server' style="color: #20c958;"></i>
+                            </a>
                         </div>
-                        <div class="form-boton">
-                            <div class="button">
-                                <input type="submit" value="Enviar mensaje">
-                            </div>
+                        <div class="progress">
+                            <a href="docs/Pedro José Manoatl Milacatl - Curso JS en la Web_ Validación de Formularios y HTML5 - Alura.pdf" target="_blank">
+                                <h3>HTML 5</h3>
+                                <i class='bx bxl-html5' style="color: #f16529;"></i>
+                            </a>
                         </div>
-                    </form>
-                    <div class="exito hide" id="ocultar">
-                        <div class="mensaje-exito" id="mensaje-exito">
-                            <img class="mensaje-imagen" src="Imagenes/mensaje-enviado.png" alt="registro exitoso">
-                            <div class="mensaje-texto">
-                                Su mensaje ha sido enviado con éxito. <br>Mantengase al pendiente de su <br> correo
-                                para brindarle una <br> respuesta a la brevedad posible.
-                            </div>
+                        <div class="progress">
+                            <a href="docs/Pedro José Manoatl Milacatl - Curso Arquitectura CSS_ descomplicando los problemas - Alura.pdf" target="_blank">
+                                <h3>CSS 3</h3>
+                                <i class='bx bxl-css3' style="color: #2965f1;"></i>
+                            </a>
+                        </div>
+                        <div class="progress">
+                            <a href="docs/Pedro José Manoatl Milacatl - Curso JavaScript_ primeros pasos con el lenguaje - Alura.pdf" target="_blank">
+                                <h3>JavaScript</h3>
+                                <i class='bx bxl-javascript' style="color: #f4e11e;"></i>
+                            </a>
+                        </div>
+                        <div class="progress">
+                            <a href="docs/Pedro José Manoatl Milacatl - Curso React_ desarrollando con JavaScript - Alura.pdf" target="_blank">
+                                <h3>React</h3>
+                                <i class='bx bxl-react' style="color: #61dafb;"></i>
+                            </a>
+                        </div>
+                        <div class="progress">
+                            <a href="">
+                                <h3>Python, Data Science en OCI y Oracle Analytics</h3>
+                                <i class='bx bxl-python' style="color: #b65a0f;"></i>
+                            </a>
+                        </div>
+                        <div class="progress">
+                            <a href="">
+                                <h3>C++</h3>
+                                <i class='bx bxl-c-plus-plus' style="color: #0180cd;"></i>
+                            </a>
+                        </div>
+                        <div class="progress">
+                            <a href="">
+                                <h3>MySQL</h3>
+                                <i class='bx bxs-data' style="color: #00758f;"></i>
+                            </a>
+                        </div>
+                        <div class="progress">
+                            <a href="">
+                                <h3>Oracle Cloud Infrastructure</h3>
+                                <i class='bx bx-cloud' style="color: #8dd9ec;"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="octavo">
-            <p>Creado por Pedro Manoatl</p>
-            <p>2023</p>
-        </section>
-    </main>
 
-    <script src="slider.js"></script>
-    <script src="button-form.js"></script>
-    <script src="ancla.js"></script>
+            <div class="skills-columnas">
+                <h3 class="tittle"> Habilidades blandas </h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3 class="soft-skills">Comunicativo de manera clara</h3>
+                        </div>
+                        <div class="progress">
+                            <h3 class="soft-skills">Resolución de problemas </h3>
+                        </div>
+                        <div class="progress">
+                            <h3 class="soft-skills">Autogestión</h3>
+                        </div>
+                        <div class="progress">
+                            <h3 class="soft-skills">Curiosidad por aprender</h3>
+                        </div>
+                        <div class="progress">
+                            <h3 class="soft-skills">Buen trabajo en equipo</h3>
+                        </div>
+                        <div class="progress">
+                            <h3 class="soft-skills">Adaptable a los cambios</h3>
+                        </div>
+                        <div class="progress">
+                            <h3 class="soft-skills">Paciente y perseverante</h3>
+                        </div>
+                        <div class="progress">
+                            <h3 class="soft-skills">Educador</h3>
+                        </div>
+                        <div class="progress">
+                            <h3 class="soft-skills">Creativo</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="seccion6">
+        <h2 class="heading">¡Vamos a <span>charlar</span>!<i class='bx bxs-envelope'></i></h2>
+
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+            <div class="input-box">
+                <input type="text" placeholder="Nombre Completo" name="nombre">
+                <input type="text" placeholder="Asunto" name="asunto">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Teléfono" name="telefono">
+                <input type="email" placeholder="E-mail" name="email">
+            </div>
+            <textarea name="descripcion" cols="30" rows="10"
+                placeholder="¿Listo para tener tu propia página web?. ¡Cuéntame más sobre tu proyecto!"></textarea>
+            <input type="submit" value="Enviar mensaje" class="btn">
+        </form>
+
+        <a href="https://wa.me/525553325666?text=Whatsapp de Pedro, vamos a conocernos y puedes contarme sobre tu nuevo proyecto. O simplemente charlemos (◕‿◕)☆" target="_blank">
+            <i class='bx bxl-whatsapp'></i>
+            También podemos contactarnos por medio de whatsapp.
+        </a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 Pedro Manoatl | Todos los derechos reservados</p>
+        </div>
+        <div class="footerinconTop">
+            <a href="#seccion1"><i class='bx bxs-up-arrow-circle'></i></a>
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
