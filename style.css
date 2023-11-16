@@ -55,7 +55,8 @@ body {
     left: 0;
     width: 100%;
     padding: 2rem 4.5%;
-    background: transparent;
+    background: var(--bg-color);
+    box-shadow: 0 .4rem .6rem rgba(0, 0, 0, .2);
     display: flex;
     align-items: center;
     z-index: 100;
@@ -64,7 +65,7 @@ body {
 
 .header.sticky {
     background: var(--bg-color);
-    box-shadow: 0 .1rem .1rem rgba(0, 0, 0, .2);
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .2);
 }
 
 .logo {
@@ -86,7 +87,7 @@ body {
 .navbar a {
     position: relative;
     font-size: 1.7rem;
-    color: #fdfdfd;/*--white-color*/
+    color: var(--text-color);
     font-weight: 500;
     margin-right: 1.3rem;
 }
@@ -118,7 +119,7 @@ body {
 #darkMode-icon {
     position: relative;
     font-size: 2.4rem;
-    color: #fdfdfd;
+    color: var(--text-color);
     cursor: pointer;
     line-height: 1;
 }
@@ -269,13 +270,16 @@ section {
 }
 
 .home .profession-box .profession:nth-child(2){
-    margin-bottom: -90px;
+    margin-bottom: 0;
 }
-.home .profession-box .profession:nth-child(3) i{
+.home .profession-box .profession:nth-child(2) i{
     margin-right: 145px;
 }
-.home .profession-box .profession:nth-child(4) i{
-    margin-left: 28px;
+.home .profession-box .profession:nth-child(3){
+    margin-left: -23px;
+}
+.home .profession-box .profession:nth-child(4){
+    margin-bottom: 90px;
 }
 .home .profession i {
     font-size: 3.8rem;
@@ -307,9 +311,9 @@ section {
 }
 
 .home-img img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    position: relative;
+    bottom: -16px;
+    right: -16px;
     pointer-events: none;
 }
 
@@ -437,6 +441,7 @@ span {
 .educacion{
     display: flex;
     justify-content: center;
+    background: var(--third-bg-color);
     align-items: center;
     flex-direction: column;
     min-height: auto;
@@ -501,7 +506,7 @@ span {
 .skills{
     min-height: auto;
     padding-bottom: 7rem;
-    background: var(--third-bg-color);
+    background: var(--bg-color);
 }
 .skills .skills-filas{
     display: flex;
@@ -676,12 +681,29 @@ span {
     }
 
     .home .profession-container {
-        height: 85.8rem;
+        height: 100%;
     }
 
     .home .profession-container .profession-box {
-        right: -12rem;
+        right: -13.5rem;
         height: 85.8rem;
+    }
+
+    .home .profession-box .profession:nth-child(1) i {
+        margin-right: 50px;
+    }
+    
+    .home .profession-box .profession:nth-child(2) i{
+        margin-right: 85px;
+    }
+    .home .profession-box .profession:nth-child(3){
+        margin-left: -45px;
+    }
+    .home .profession-box .profession:nth-child(3) i{
+        margin-right: 33px;
+    }
+    .home .profession-box .profession:nth-child(4){
+        margin-bottom: 108px;
     }
 
     .home .profession-container .overlay {
@@ -711,11 +733,6 @@ span {
     .navbar a{
         margin-right: 0.74rem;
     }
-    .navbar a:nth-child(1),
-    .navbar a:nth-child(2) {
-        color: #fd3535;
-    }
-
 
     .navbar a.active::before {
         background: #fd3535;
@@ -826,20 +843,23 @@ span {
         margin-right: 15px;
     }
     .home .profession-box .profession:nth-child(2){
-        transform: rotate(0deg) translate(0, -43rem);
+        transform: rotate(0deg) translate(0, -35rem);
+    }
+    .home .profession-box .profession:nth-child(2) i{
+        margin-right: 0;
+    }
+    .home .profession-box .profession:nth-child(2) h3{
+        font-size: 2.7rem;
     }
     .home .profession-box .profession:nth-child(3){
-        transform: rotate(90deg) translate(-141px, -475px);
+        transform: rotate(90deg) translate(-73px, -430px);
     }
     .home .profession-box .profession:nth-child(3) i{
         margin-right: 0;
     }
-    .home .profession-box .profession:nth-child(3) h3{
-        font-size: 2.7rem;
-    }
     .home .profession-box .profession:nth-child(4){
-        transform: rotate(180deg) translate(-180px, -333px);
-    }
+        transform: rotate(180deg) translate(-127px, -381px);
+}
     .home .profession-box .profession:nth-child(4) i{
         margin-left: 3px;
     }
@@ -909,19 +929,19 @@ span {
         padding: 0 3% 30rem;
     }
     .home .profession-box .profession:nth-child(1){
-        transform: rotate(-90deg) translate(-100px, -233px);
+        transform: rotate(-90deg) translate(-115px, -198px);
     }
     .home .profession-box .profession:nth-child(1) h3{
-        font-size: 2.4rem;
+        font-size: 2.9rem;
     }
     .home .profession-box .profession:nth-child(2){
-        transform: rotate(0deg) translate(5px, -377px);
+        transform: rotate(0deg) translate(5px, -317px);
     }
     .home .profession-box .profession:nth-child(3){
-        transform: rotate(90deg) translate(-133px, -465px);
+        transform: rotate(90deg) translate(-77px, -437px);
     }
     .home .profession-box .profession:nth-child(4){
-        transform: rotate(180deg) translate(-167px, -338px)
+        transform: rotate(180deg) translate(-113px, -383px);
     }
     .contact form .input-box input{
         width: 100%;
