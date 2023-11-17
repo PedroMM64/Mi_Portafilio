@@ -98,7 +98,7 @@ body {
 }
 
 .header.sticky .navbar a:active {
-    color: #fd3535;
+    color: var(--titles);
 }
 
 .navbar a.active::before {
@@ -107,15 +107,9 @@ body {
     left: 0;
     width: 100%;
     height: .2rem;
-    background: #fdfdfd;
+    background: var(--titles);
     bottom: -6px;
 }
-
-.header.sticky .navbar a::before {
-    border-bottom: 2px solid var(--titles);
-    opacity: .7;
-}
-
 #darkMode-icon {
     position: relative;
     font-size: 2.4rem;
@@ -744,12 +738,18 @@ span {
     }
 
     .home .profession-container .profession-box {
+        top: -68px;
         right: -45rem;
     }
 
     .home .profession-container .overlay {
         right: -39.5rem;
+        border-top: 308px solid var(--overlay-color);
+        border-right: 396px solid var(--overlay-color);
+        border-bottom: 384px solid var(--overlay-color);
+        border-left: 65px solid transparent;
     }
+    
 
     .home-img img {
         display: none;

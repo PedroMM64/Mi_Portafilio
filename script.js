@@ -74,8 +74,8 @@ darkModeIcon.onclick = () =>{
 
 ScrollReveal({ 
     reset: true,
-    distance: '80px',
-    duration: 2000,
+    distance: '15px',
+    duration: 1500,
     delay: 200
 });
 
