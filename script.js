@@ -1,5 +1,11 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
+const form = document.querySelector('form');
+const fullName = document.getElementById('name');
+const asunto = document.getElementById('asunto');
+const email = document.getElementById('email');
+const tel = document.getElementById('telefono');
+const descripcion = document.getElementById('descripcion');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
@@ -67,15 +73,41 @@ window.onscroll = () => {
 
 let darkModeIcon = document.querySelector('#darkMode-icon');
 
-darkModeIcon.onclick = () =>{
+darkModeIcon.onclick = () => {
     darkModeIcon.classList.toggle('bx-sun');
     document.body.classList.toggle('dark-mode');
 }
 
-ScrollReveal({ 
-    reset: true,
-    distance: '15px',
-    duration: 1500,
+function enviarCorreo() {
+    const cuerpoMensaje = `Nombre Completo: ${fullName.value}<br> Email: ${email.value}<br> Teléfono: ${tel.value}<br> Descripción: ${descripcion.value}`;
+
+    Email.send({
+        SecureToken : "acd5787e-f125-4d6b-9ddd-5ed989652f92",
+        To: 'pedromanoatl64@outlook.com',
+        From: "pedromanoatl64@outlook.com",
+        Subject: asunto.value,
+        Body: cuerpoMensaje
+    }).then(
+        message => {
+            if(message == "OK"){
+                Swal.fire({
+                    title: "Mensaje enviado",
+                    text: "Enviaré una respuesta a la brevedad posible.",
+                    icon: "success"
+                });
+            }
+        }
+    );
+}
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    enviarCorreo();
+});
+
+ScrollReveal({
+    reset: false,
+    distance: '12px',
+    duration: 2000,
     delay: 200
 });
 
