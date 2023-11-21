@@ -372,7 +372,7 @@ span {
 }
 
 .skills-columnas .tittle .ver-cert {
-    font-size: 1.15rem;
+    font-size: 1.35rem;
     font-weight: 500;
     color: var(--text-color);
 }
@@ -443,6 +443,10 @@ span {
 
 .proyects h2 {
     margin-bottom: 4rem;
+}
+
+.proyects .ver-cert {
+    display: none;
 }
 
 .proyects .proyects-container {
@@ -534,7 +538,7 @@ span {
 }
 
 .educacion .ver-cert {
-    font-size: 1.35rem;
+    font-size: 1.65rem;
     font-weight: 500;
     color: var(--text-color);
 }
@@ -806,6 +810,18 @@ span {
     .proyects {
         padding-bottom: 7rem;
     }
+    .proyects h2 {
+        margin-bottom: 1rem;
+    }
+    
+    .proyects .ver-cert {
+        display: grid;
+        justify-items: center;
+        font-size: 1.65rem;
+        font-weight: 500;
+        color: var(--text-color);
+        margin-bottom: 4rem;
+    }
 
     .contact {
         min-height: auto;
@@ -897,7 +913,7 @@ span {
 
     .home .profession-container .profession-box {
         position: fixed;
-        top: 60%;
+        top: 55.5%;
         left: 0;
         border-radius: 0;
         width: 100%;
@@ -954,7 +970,7 @@ span {
 
     .home .profession-container .overlay {
         position: fixed;
-        top: 75rem;
+        top: 82rem;
         left: 50%;
         right: 0;
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
