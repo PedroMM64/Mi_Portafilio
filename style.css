@@ -31,7 +31,7 @@
     --overlay-color: #642697;
     --circulo: #375dc4;
     --titles: #bdd4f5;
-    --second-bg-color: #134a77;
+    --second-bg-color: #164c77;
     --third-bg-color: #011a2e;
     --whats-bg: #075e54;
     --icon-whats: #25d366;
@@ -459,6 +459,7 @@ span {
 .proyects-container .proyects-box {
     position: relative;
     display: flex;
+    flex-direction: column;
     border-radius: 2rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
     overflow: hidden;
@@ -496,6 +497,14 @@ span {
 .proyects-box:hover .proyects-layer {
     opacity: 1;
 }
+.proyects-box .proyects-tools{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 2.2rem;
+}
+.proyects-box .proyects-tools i{
+    font-size: 32px;
+}
 
 .proyects-layer h4 {
     font-size: 3rem;
@@ -526,6 +535,7 @@ span {
     display: flex;
     gap: 2rem;
 }
+
 
 .educacion {
     display: flex;
