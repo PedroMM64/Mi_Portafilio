@@ -324,7 +324,7 @@ section {
 
 .home-img img {
     position: relative;
-    bottom: -16px;
+    bottom: 220px;
     right: -16px;
     pointer-events: none;
 }
@@ -339,10 +339,6 @@ span {
     align-items: center;
     gap: 4rem;
     background: var(--third-bg-color);
-}
-
-.about img img {
-    width: 40vw;
 }
 
 .heading {
