@@ -553,13 +553,12 @@ span {
 .empleos-columna .empleos-box .empleos-content {
     display: flex;
     position: relative;
-    width: 460px;
     height: 270px;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem;
+    padding: 5rem;
     border: 0.2rem solid #e75353;
     border-radius: 0.6rem;
     margin: 2rem 0;
@@ -1061,6 +1060,10 @@ span {
     .about-img img {
         width: 70vw;
         margin-top: -2rem;
+    }
+
+    .empleos .empleos-fila .empleos-columna{
+        flex-direction: column;
     }
 
     .educacion-fila .educacion-columna .educacion-box {
